@@ -4,6 +4,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
+using Winstanley.BlazorMauiHybrid.Core;
 using Winstanley.BlazorMauiHybrid.Core.Data;
 
 namespace Winstanley.BlazorMauiHybrid.Native
@@ -22,7 +23,7 @@ namespace Winstanley.BlazorMauiHybrid.Native
                 });
 
             builder.Services.AddBlazorWebView();
-            builder.Services.AddSingleton<WeatherForecastService>();
+            builder.Services.AddCore();
 
             return builder.Build();
         }

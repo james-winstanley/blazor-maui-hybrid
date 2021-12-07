@@ -10,6 +10,9 @@
 		<EnablePreviewMsixTooling>true</EnablePreviewMsixTooling>
 		<EnableDefaultCssItems>false</EnableDefaultCssItems>
 
+		<!-- Fixes crash on Android Release builds -->
+		<AndroidLinkMode>None</AndroidLinkMode>
+
 		<!-- Display name -->
 		<ApplicationTitle>Winstanley.BlazorMauiHybrid.Native</ApplicationTitle>
 
